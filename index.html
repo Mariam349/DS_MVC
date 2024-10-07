@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="filterInput" placeholder="Filter products by name" class="filter-box">
+        <input type="number" id="filterPrice" placeholder="Filter products by price" class="filter-box">
+
+        <label>
+            <input type="checkbox" id="inStockOnly"> Only show products in stock
+        </label>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody"></tbody>
+        </table>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
